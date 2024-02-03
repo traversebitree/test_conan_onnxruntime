@@ -1,0 +1,2 @@
+[requires]
+onnxruntime/1.16.2
