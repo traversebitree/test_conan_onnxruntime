@@ -1,2 +1,6 @@
 [requires]
 onnxruntime/1.16.2
+
+[options]
+onnxruntime*:shared=False
+onnxruntime*:with_xnnpack=False

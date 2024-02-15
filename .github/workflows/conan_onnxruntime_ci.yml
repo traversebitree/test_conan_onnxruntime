@@ -29,5 +29,5 @@ jobs:
         working-directory: ${{ github.workspace }}/onnxruntime_${{ matrix.onnx_ver }}
         run: |
           conan profile detect
-          conan install . --output-folder=../build --build=missing --settings:host=compiler.cppstd=17 --settings:build=compiler.cppstd=17
+          conan install . --output-folder=../build --build="*" --settings:host=compiler.cppstd=17 --settings:build=compiler.cppstd=17
         
